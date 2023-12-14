@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+			<link rel="stylesheet" href="style.css"></link>
+		    <script src="main.js"></script>
+
+
+
+<!-- 
+        mesame davaleba -->
+            <button id="bttn1">1</button>
+            <button id="bttn2">2</button>
+            <button id="bttn3">3</button>
+
+
+
+
+                <div id="pas">
+                <h1 id="text1">ვინ დაწერა დედაენა? </h1>
+                <h2 id="ak">1.აკაკი წერეთელი</h2>
+                <h2 id="il">2.ილია ჭავჭავაძე</h2>
+                <h2 id="iak">3.იაკობ გოგებაშვილი</h2>
+
+                </div>
+
+<!-- pirveli davaleba -->
+
+<button id="myfirstbtn" onclick="hide()">click me bro</button>
+
+<div id="myfirsttext">hello how are you? </div>
+
+<script>
+
+
+
+
+
+
+
+//pirveli davaleba
+function hide(){
+    document.getElementById("myfirsttext").style.display="none"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//mesame davaleba
+
+        const btn1=document.getElementById("bttn3")
+        const texttt=document.getElementById("iak")
+        btn1.addEventListener("click",(e)=>{
+            e.target.style.color="black;"
+            texttt.style.color="green"
+
+
+
+
+        })
+        const butn2=document.getElementById("bttn2")
+        const answ1=document.getElementById("il")
+
+        butn2.addEventListener("click",(e)=>{
+            e.target.style.color="black;"
+            answ1.style.color="red"
+        butn3.style.color="red"
+
+
+        })
+
+
+    const butn1=document.getElementById("bttn1")
+    const answ2=document.getElementById("ak")
+
+    butn1.addEventListener("click",(e)=>{
+        e.target.style.color="black;"
+        answ2.style.color="red"
+    buttn1.style.color="red"
+
+
+
+    })
+
+ 
+
+
+
+
+</script>
+
+
+
+<style>
+
+
+
+
+
+            #pas{
+                position:absolute;
+                align-items: center;
+                padding: 11%;
+                left:250px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: beige;
+                border:solid 3px black;
+
+                    }
+
+                    #text1{
+                        border:3px solid rgb(134, 133, 123);
+                        background-color: bisque;
+
+                    }
+            *{
+                background-color: rgb(255, 255, 255);
+            }
+
+
+</style>
+
+</body>
+</html>
+
